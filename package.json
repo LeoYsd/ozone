@@ -41,6 +41,7 @@
     "@openzeppelin/contracts": "^4.8.3",
     "ch": "^0.3.0",
     "ethereum-waffle": "^4.0.10",
-    "hardhat": "^2.14.0"
+    "hardhat": "^2.14.0",
+    "tailwindcss": "^3.3.2"
   }
 }
