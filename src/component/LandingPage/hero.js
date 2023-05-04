@@ -1,4 +1,4 @@
-const HeroLayout = ({ children }) => (
+const HeroLayout = () => (
     <main className="my-8 px-20 w-full">
         <div className="px-72 my-40">
             <h1 className="font-robotoMd text-center text-[65px] font-bold text-white justify-center"><span className="text-purple">Buy & Sell</span> Real Estate with Web 3...</h1>
