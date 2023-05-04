@@ -5,6 +5,21 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
+    fontSize: {
+      sm: '12px',
+      normal: '15px',
+      md: '18px',
+      llx: '48px',
+      smd: '15px',
+      lg: '21.6px',
+      gl: '25.92px',
+      lx: '31.104px',
+      xl: '31.104px',
+      xll: '37.325px',
+      xlll: '53.748px',
+      xxl: '64.497px',
+      xxxl: '70px'
+    },
     colors: {
       bg: '#F5F5F5',
       lailac: '#9C94FE',
@@ -15,6 +30,8 @@ module.exports = {
       black: '#1E1A2F',
       error: '#DA0060',
       white: '#FFFFFF',
+      label: '#1E1A2F66',
+      hack: '#9C94FE33',
     },
     boxShadow: {
       inset: 'rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset',
@@ -29,6 +46,7 @@ module.exports = {
       robotoThin: ['Roboto Thin', 'sans-serif'],
       robotoLight: ['Roboto Light', 'sans-serif'],
       robotoMd: ['Roboto Medium', 'sans-serif'],
+      robotoBold: ['Roboto Bold', 'sans-serif'],
       robotoBlack: ['Roboto Black', 'sans-serif'],
     },
     lineHeight: {

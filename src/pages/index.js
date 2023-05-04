@@ -3,7 +3,7 @@ import LandingPageLayout from "../component/layout";
 
 const LandingPage = () => (
     <LandingPageLayout>
-        <p className="font-robotoThin text-lailac underline">Landing page</p>
+        <p className="font-robotoThin text-lailac underline">Second page</p>
     </LandingPageLayout>
 );
 

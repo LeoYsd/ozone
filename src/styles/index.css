@@ -9,8 +9,11 @@ body {
 }
 
 .hero {
-  margin: -10px 0;
   background-image: url('/src/assets/images/background-image.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.trans {
+  transition: all 0.5s ease;
 }

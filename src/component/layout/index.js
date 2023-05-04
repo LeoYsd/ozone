@@ -3,14 +3,13 @@ import HeroLayout from "./hero";
 
 const LandingPageLayout = ({ children }) => (
     <div className="">
-        <div className="hero h-screen">
-            <div className="bg-[#1E1A2FD9] h-screen">
+        <div className="hero my-4">
+            <div className="bg-[#1E1A2FD9] py-5">
                 <AuthNav />
-                    <HeroLayout>
-                        {children}
-                    </HeroLayout>
+                <HeroLayout />
             </div>
         </div>
+        <div className="px-20">{children}</div>
     </div>
 );
 
