@@ -1,5 +1,5 @@
 import AuthNav from "../nav/authNav";
-import HeroLayout from "./hero";
+import HeroLayout from "../LandingPage/hero";
 
 const LandingPageLayout = ({ children }) => (
     <div className="">
