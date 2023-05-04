@@ -2,18 +2,19 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./public/index.html",
   ],
   theme: {
     colors: {
-      primary: '#FC7785',
-      secondary: '#6A67F3',
-      tertiary: '#498CDA',
-      quaternary: '#74B949',
-      quinary: '#332E59',
-      primaryHover: '#FF4F5F',
-      red: '#DA0060',
+      bg: '#F5F5F5',
+      lailac: '#9C94FE',
+      grey: '#EDEFF6',
+      dark: '#1E1A2F',
+      subText: '#1E1A2F99',
+      purple: '#EF8DF8',
+      black: '#1E1A2F',
+      error: '#DA0060',
+      white: '#FFFFFF',
     },
     boxShadow: {
       inset: 'rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset',
@@ -25,6 +26,10 @@ module.exports = {
     },
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
+      robotoThin: ['Roboto Thin', 'sans-serif'],
+      robotoLight: ['Roboto Light', 'sans-serif'],
+      robotoMd: ['Roboto Medium', 'sans-serif'],
+      robotoBlack: ['Roboto Black', 'sans-serif'],
     },
     lineHeight: {
       md: '50px',
@@ -35,4 +40,3 @@ module.exports = {
   },
   plugins: [],
 }
-
