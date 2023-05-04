@@ -1,5 +1,5 @@
 import React from "react";
-import LandingPageLayout from "../component/layout";
+import LandingPageLayout from "../component/layout/indexs";
 
 const LandingPage = () => (
     <LandingPageLayout>
