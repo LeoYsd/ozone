@@ -12,6 +12,7 @@ body {
   background-image: url('/src/assets/images/background-image.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .trans {
