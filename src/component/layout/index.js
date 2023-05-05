@@ -1,5 +1,6 @@
 import AuthNav from "../nav/authNav";
 import HeroLayout from "../LandingPage/hero";
+import SliderContainer from "../common/slider/sliderContainer";
 
 const LandingPageLayout = ({ children }) => (
     <div className="">
@@ -10,6 +11,7 @@ const LandingPageLayout = ({ children }) => (
             </div>
         </div>
         <div className="px-20">{children}</div>
+        <SliderContainer  />
     </div>
 );
 
