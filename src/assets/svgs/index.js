@@ -111,3 +111,28 @@ export const AddIcon = (
 <path d="M11.9142 3.4375V18.5625" stroke="#9C94FE" stroke-width="1.38209" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 );
+
+export const MapPinIcon = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.8454 12.4361C13.4031 12.4361 14.6659 11.1733 14.6659 9.61562C14.6659 8.05793 13.4031 6.79517 11.8454 6.79517C10.2878 6.79517 9.02499 8.05793 9.02499 9.61562C9.02499 11.1733 10.2878 12.4361 11.8454 12.4361Z" stroke="white" stroke-width="1.41023" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.8966 9.61559C18.8966 15.9616 11.8454 20.8974 11.8454 20.8974C11.8454 20.8974 4.79431 15.9616 4.79431 9.61559C4.79431 7.74551 5.5372 5.95203 6.85954 4.62968C8.18189 3.30734 9.97537 2.56445 11.8454 2.56445C13.7155 2.56445 15.509 3.30734 16.8314 4.62968C18.1537 5.95203 18.8966 7.74551 18.8966 9.61559V9.61559Z" stroke="white" stroke-width="1.41023" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+);
+
+export const Loader = (
+  <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+  <circle
+    className="opacity-25"
+    cx="12"
+    cy="12"
+    r="10"
+    stroke="currentColor"
+    strokeWidth="4"
+  ></circle>
+  <path
+    className="opacity-75"
+    fill="currentColor"
+    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+  ></path>
+</svg>
+);
