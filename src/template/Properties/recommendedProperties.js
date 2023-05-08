@@ -21,7 +21,7 @@ const RecommendedProperties = () => (
           <div className="w-full mt-5 flex items-center">
             <div className="w-full flex">
                 <div className="px-5 w-8/12 relative h-full">
-                    <img src='https://res.cloudinary.com/enyata-nig/image/upload/v1683297169/arlington_cndncf.svg' alt="Arlington" className="h-full" />
+                    <img src='https://res.cloudinary.com/dboqyj4bp/image/upload/v1683579660/arlington_ooglhz.svg' alt="Arlington" className="h-full" />
                     <div className="py-6 px-9 text-white absolute top-0">
                             <p className="font-robotoMd">Arlington</p>
                             <p className="text-sm font-robotoLight my-4">35 listings</p>
@@ -32,7 +32,7 @@ const RecommendedProperties = () => (
                             <div className="py-6 px-9 absolute bottom-0">{MapPinIcon}</div>
                 </div>
                 <div className='rounded-lg w-4/12 h-56 relative'>
-                        <img src="https://res.cloudinary.com/enyata-nig/image/upload/v1683294908/centerville_y7zbwt.svg" alt="" className="h-full w-full" />
+                        <img src="https://res.cloudinary.com/dboqyj4bp/image/upload/v1683579657/centerville_gzgzvf.svg" alt="" className="h-full w-full" />
                         <div className="py-6 px-9 text-white absolute top-0">
                             <p className="font-robotoMd">Centerville</p>
                             <p className="text-sm font-robotoLight my-4">35 listings</p>
