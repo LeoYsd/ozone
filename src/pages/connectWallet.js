@@ -9,7 +9,7 @@ const ConnectWallet = () => (
 
             <div className="border border-purple rounded-lg w-5/12 mt-4 p-4 mx-auto mt-8">
                 {WalletType.map((wallet, index) => (
-                    <div key={wallet.name} className="cursor-pointer">
+                    <a href={wallet.url} key={wallet.name} className="cursor-pointer">
                         <div className="flex items-center py-2">
                             <div>{wallet.icon}</div>
                             <p className="text-[25px] ml-4">{wallet.name}</p>
@@ -17,7 +17,7 @@ const ConnectWallet = () => (
                         {index !== WalletType.length - 1 && (
                             <div className="my-4 border-[0.8px] border-purple" />
                         )}
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>

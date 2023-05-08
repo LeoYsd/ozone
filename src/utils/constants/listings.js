@@ -5,6 +5,7 @@ import House4 from "../../assets/images/house-4.svg";
 import House5 from "../../assets/images/house-5.svg";
 import House6 from "../../assets/images/house-6.svg";
 import { BitkeepIcon, LunoIcon, MetamaskIcon, Phantom } from "../../assets/svgs";
+import { OWNED_PROPERTIES } from "./pages";
 
 export const Listings = [
     {
@@ -84,22 +85,22 @@ export const Listings = [
 export const WalletType = [
     {
         name: 'Phantom',
-        url: '#',
+        url: OWNED_PROPERTIES,
         icon: Phantom
     },
     {
         name: 'Luno Wallet',
-        url: '#',
+        url: OWNED_PROPERTIES,
         icon: LunoIcon
     },
     {
         name: 'BitKeep Wallet',
-        url: '#',
+        url: OWNED_PROPERTIES,
         icon: BitkeepIcon
     },
     {
         name: 'MetaMask',
-        url: '#',
+        url: OWNED_PROPERTIES,
         icon: MetamaskIcon
     },
 ];
