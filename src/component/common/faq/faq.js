@@ -10,9 +10,9 @@ export default function FaqItem({ question, answer }) {
   }
 
   return (
-    <div className="bg-white w-[48%] flex flex-col border-b-[#1E1A2F66] border-b">
+    <div className="bg-white md:w-[48%] sm:w-full flex flex-col border-b-[#1E1A2F66] border-b">
       <button className="flex justify-between w-full align-center py-6" onClick={toggleOpen}>
-        <span className="text-[#1E1A2FCC] font-bold">{question}</span>
+        <span className="text-[#1E1A2FCC] font-bold text-left lg:text-[1rem] md:text-[.9rem]">{question}</span>
         <img src={arrowDown} alt='arrowDown' className={`my-auto transform transition-transform ${isOpen ? 'rotate-180' : 'rotate-0'}`} />
       </button>
       <div className={`${isOpen ? 'block' : 'hidden'}`}>
