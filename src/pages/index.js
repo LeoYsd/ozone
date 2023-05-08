@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import LandingPageLayout from "../component/layout";
 import { TopList, WatchList } from "../template/Listings";
-
-const options = ['Top', 'WatchList']
+import RecommendedProperties from "../template/Properties/recommendedProperties";
 
 const LandingPage = () => {
     const [topListing, setTopListing] = useState(true);
@@ -16,6 +15,10 @@ return (
             <div className="w-full h-px bg-hack"></div>
 
             {topListing ? (<TopList />) : (<WatchList />)}
+        </div>
+
+        <div className="w-full my-36">
+            <RecommendedProperties />
         </div>
 
     </LandingPageLayout>

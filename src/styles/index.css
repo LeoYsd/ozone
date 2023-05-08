@@ -1,15 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url("https://fonts.cdnfonts.com/css/roboto");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero {
-  background-image: url('/src/assets/images/background-image.svg');
+  background-image: url("../assets/images/background-image.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

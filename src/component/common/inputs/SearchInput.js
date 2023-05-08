@@ -1,9 +1,6 @@
 import { SearchIcon } from "../../../assets/svgs";
-import useCurrentLocation from "../../../hooks/useCurrentLocation";
 
-const SearchInput = () => {
-  const { pathname } = useCurrentLocation();
-return (
+const SearchInput = () => (
   <form className="flex items-center w-full">
     <label htmlFor="search" className="sr-only">
       Search
@@ -22,6 +19,5 @@ return (
     </div>
   </form>
 );
-};
 
 export default SearchInput;
