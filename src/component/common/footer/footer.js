@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className="w-[65%] flex md:flex-row sm:flex-col items-center justify-between sm:gap-12 md:gap-0">
                     <div className='md:w-[33%] sm:w-full flex justify-between flex-col h-full'>
-                        <h3 className='h-[10%] font-bold text-[#1B1D1F] text-[1.3rem] sm:mb-3 md:mb-0'>Features</h3>
+                        <h3 className='h-[10%] font-bold text-[#1B1D1F] lg:text-[1.3rem] md:text-[1.1rem] sm:mb-3 md:mb-0'>Features</h3>
                         <ul className='h-[80%] text-[#6D737A] flex flex-col gap-2'>
                             <li>Home</li>
                             <li>Become a host</li>
@@ -47,7 +47,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='md:w-[33%] sm:w-full flex justify-between flex-col h-full'>
-                        <h3 className='h-[10%] font-bold text-[#1B1D1F] text-[1.3rem] sm:mb-3 md:mb-0'>Company</h3>
+                        <h3 className='h-[10%] font-bold text-[#1B1D1F] lg:text-[1.3rem] md:text-[1.1rem] sm:mb-3 md:mb-0'>Company</h3>
                         <ul className='h-[80%] text-[#6D737A] flex flex-col gap-2'>
                             <li>About us</li>
                             <li>Press contact</li>
@@ -56,7 +56,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className='md:w-[33%] sm:w-full flex justify-between flex-col h-full'>
-                        <h3 className='h-[10%] font-bold text-[#1B1D1F] text-[1.3rem] sm:mb-3 md:mb-0'>Team and Policies</h3>
+                        <h3 className='h-[10%] font-bold text-[#1B1D1F] lg:text-[1.3rem] md:text-[1.1rem] sm:mb-3 md:mb-0'>Team and Policies</h3>
                         <ul className='h-[80%] text-[#6D737A] flex flex-col gap-2'>
                             <li>Terms of service</li>
                             <li>Privacy policy</li>
