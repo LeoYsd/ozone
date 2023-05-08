@@ -4,6 +4,8 @@ import House3 from "../../assets/images/house-3.svg";
 import House4 from "../../assets/images/house-4.svg";
 import House5 from "../../assets/images/house-5.svg";
 import House6 from "../../assets/images/house-6.svg";
+import { BitkeepIcon, LunoIcon, MetamaskIcon, Phantom } from "../../assets/svgs";
+import { OWNED_PROPERTIES } from "./pages";
 
 export const Listings = [
     {
@@ -78,4 +80,27 @@ export const Listings = [
         owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
         owner_name: 'Jane Cooper'
     },
-]
+];
+
+export const WalletType = [
+    {
+        name: 'Phantom',
+        url: OWNED_PROPERTIES,
+        icon: Phantom
+    },
+    {
+        name: 'Luno Wallet',
+        url: OWNED_PROPERTIES,
+        icon: LunoIcon
+    },
+    {
+        name: 'BitKeep Wallet',
+        url: OWNED_PROPERTIES,
+        icon: BitkeepIcon
+    },
+    {
+        name: 'MetaMask',
+        url: OWNED_PROPERTIES,
+        icon: MetamaskIcon
+    },
+];
