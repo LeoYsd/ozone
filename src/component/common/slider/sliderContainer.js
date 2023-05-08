@@ -9,7 +9,7 @@ import propertyFour from '../../../assets/images/propertyFour.png';
 const SliderContainer = () => {
     return (
         <div className="
-            my-10
+            my-16
             w-[90%]
             mx-auto
         ">
@@ -19,6 +19,7 @@ const SliderContainer = () => {
                 leading-9
                 text-opacity-80
                 text-gray-800
+                my-4
             ">
                 Latest Properties
             </h1>
@@ -67,6 +68,33 @@ const SliderContainer = () => {
                         Location="London"
                         price={3000}
                         imageSrc={propertyTwo}
+                        />,
+                        <Card
+                        Location="Zanzibar"
+                        price={6000}
+                        imageSrc={propertyThree}
+                        hotOffer={true}
+                        />,
+                        <Card
+                        Location="Dubai"
+                        price={2000}
+                        imageSrc={propertyFour}
+                        />,
+                        <Card
+                        Location="London"
+                        price={3000}
+                        imageSrc={propertyTwo}
+                        />,
+                        <Card
+                        Location="Zanzibar"
+                        price={6000}
+                        imageSrc={propertyThree}
+                        hotOffer={true}
+                        />,
+                        <Card
+                        Location="Dubai"
+                        price={2000}
+                        imageSrc={propertyFour}
                         />,
                     ]}
                 />

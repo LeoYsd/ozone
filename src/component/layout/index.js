@@ -1,6 +1,7 @@
 import AuthNav from "../nav/authNav";
 import HeroLayout from "../LandingPage/hero";
 import SliderContainer from "../common/slider/sliderContainer";
+import FAQ from "../common/faq/faqComponenet";
 
 const LandingPageLayout = ({ children }) => (
     <div className="">
@@ -12,6 +13,7 @@ const LandingPageLayout = ({ children }) => (
         </div>
         <div className="px-20">{children}</div>
         <SliderContainer  />
+        <FAQ />
     </div>
 );
 
