@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
 import HotOffers from "../hotOffers/hotOffers";
 import LocationIcon from "../../../assets/svgs/locationTag.svg";
 import arrowOut from '../../../assets/svgs/ArrowsOut.svg';
+
 
 const Card = ({ imageSrc, hotOffer, Location, price }) => {
     return (
@@ -26,7 +28,6 @@ const Card = ({ imageSrc, hotOffer, Location, price }) => {
           rounded
           transition-transform
           hover:scale-105
-          hover:rounded
           duration-300"
           src={imageSrc} alt={Location + 'image'} />
         </div>
@@ -48,6 +49,7 @@ const Card = ({ imageSrc, hotOffer, Location, price }) => {
             flex
             gap-2
             items-center
+            justify-center
           ">
             <img src={LocationIcon} alt="Location-Icon" />
             <p>{Location}</p>            
@@ -56,6 +58,7 @@ const Card = ({ imageSrc, hotOffer, Location, price }) => {
             flex
             gap-2
             items-center
+            justify-center
           ">
             <img src={arrowOut} alt="Location-Icon" />
             <p>{price}</p>            
@@ -64,5 +67,12 @@ const Card = ({ imageSrc, hotOffer, Location, price }) => {
       </div>
     );
 };
-  
+
+Card.propTypes = {
+  imageSrc: PropTypes.string.isRequired,
+  hotOffer: PropTypes.bool,
+  Location: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired
+};
+
 export default Card;

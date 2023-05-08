@@ -1,4 +1,4 @@
-import { Pane, Paragraph, Tab, Tablist } from "evergreen-ui";
+import { Pane, Tab, Tablist } from "evergreen-ui";
 import { useState } from "react";
 
 const tabs = ['Owned', 'Listings', 'Favourited', 'Activity', 'More']
@@ -31,7 +31,6 @@ return(
           role="tabpanel"
           className="font-gilroyMd text-[20px] text-rgba(255, 255, 255, 0.4)"
         >
-          {/* <Paragraph>Panel {tab}</Paragraph> */}
         </Pane>
       ))}
     </Pane>
