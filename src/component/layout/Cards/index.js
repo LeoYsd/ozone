@@ -1,8 +1,8 @@
 import { AddIcon, BathubIcon, LikeIcon, ShareIcon, SquareFitIcon, carIcon } from "../../../assets/svgs";
 
 const ListCard = ({ ...props }) => (
-    <div className="bg-white rounded-xl w-[400px] shadow-card cursor-pointer hover:shadow-hover trans my-4">
-        <img src={props.houseImage} alt="house" className="rounded-t-xl" />
+    <div className="bg-white rounded-xl xl:w-[32%] sm:w-full md:w-[49%] shadow-card cursor-pointer hover:shadow-hover my-4">
+        <img src={props.houseImage} alt="house" className="rounded-t-xl w-full" />
         <div className="py-5 px-6">
             <p className="font-robotoMd text-dark text-md">{props.title}</p>
             <p className="text-subText text-normal my-2">{props.address}</p>

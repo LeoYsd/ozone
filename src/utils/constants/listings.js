@@ -4,6 +4,12 @@ import House3 from "../../assets/images/house-3.svg";
 import House4 from "../../assets/images/house-4.svg";
 import House5 from "../../assets/images/house-5.svg";
 import House6 from "../../assets/images/house-6.svg";
+import person1 from '../../assets/images/annette.png';
+import person2 from '../../assets/images/cody.png';
+import person3 from '../../assets/images/arlene.png';
+import person4 from '../../assets/images/wade.png';
+import person5 from '../../assets/images/esther.png';
+import person6 from '../../assets/images/jane.png';
 
 export const Listings = [
     {
@@ -15,7 +21,7 @@ export const Listings = [
         parkSpace: '4',
         bathub: '4',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person1,
         owner_name: 'Annette Black'
     },
     {
@@ -27,7 +33,7 @@ export const Listings = [
         parkSpace: '2',
         bathub: '4',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person2,
         owner_name: 'Cody Fisher'
     },
     {
@@ -39,7 +45,7 @@ export const Listings = [
         parkSpace: '4',
         bathub: '4',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person3,
         owner_name: 'Arlene McCoy'
     },
     {
@@ -51,7 +57,7 @@ export const Listings = [
         parkSpace: '2',
         bathub: '4',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person4,
         owner_name: 'Wade Warren'
     },
     {
@@ -63,7 +69,7 @@ export const Listings = [
         parkSpace: '4',
         bathub: '4',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person5,
         owner_name: 'Esther Howard'
     },
     {
@@ -75,7 +81,7 @@ export const Listings = [
         parkSpace: '4',
         bathub: '2',
         meter: '2,096.00 ft',
-        owner_img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2861&q=80',
+        owner_img: person6,
         owner_name: 'Jane Cooper'
     },
 ]
