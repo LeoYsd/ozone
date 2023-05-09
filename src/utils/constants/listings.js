@@ -10,6 +10,8 @@ import person3 from '../../assets/images/arlene.png';
 import person4 from '../../assets/images/wade.png';
 import person5 from '../../assets/images/esther.png';
 import person6 from '../../assets/images/jane.png';
+import { BitkeepIcon, LunoIcon, MetamaskIcon, Phantom } from "../../assets/svgs";
+import { OWNED_PROPERTIES } from "./pages";
 
 export const Listings = [
     {
@@ -84,4 +86,27 @@ export const Listings = [
         owner_img: person6,
         owner_name: 'Jane Cooper'
     },
-]
+];
+
+export const WalletType = [
+    {
+        name: 'Phantom',
+        url: OWNED_PROPERTIES,
+        icon: Phantom
+    },
+    {
+        name: 'Luno Wallet',
+        url: OWNED_PROPERTIES,
+        icon: LunoIcon
+    },
+    {
+        name: 'BitKeep Wallet',
+        url: OWNED_PROPERTIES,
+        icon: BitkeepIcon
+    },
+    {
+        name: 'MetaMask',
+        url: OWNED_PROPERTIES,
+        icon: MetamaskIcon
+    },
+];

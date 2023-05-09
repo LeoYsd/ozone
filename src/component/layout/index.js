@@ -22,3 +22,12 @@ const LandingPageLayout = ({ children }) => (
 );
 
 export default LandingPageLayout;
+
+export const AuthLayout = ({ children }) => (
+        <div className="">
+                <div className="bg-dark py-5">
+                    <AuthNav />
+                </div>
+            <div className="w-full">{children}</div>
+        </div>
+    );
