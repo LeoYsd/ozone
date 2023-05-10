@@ -5,6 +5,8 @@ import { AuthLayout } from "../../component/layout";
 import OwnedPropertiesTab from "../../component/tabs/ownedPropertiesTab";
 import CustomButton from "../../component/common/button";
 import { LANDING_PAGE_URL } from "../../utils/constants/pages";
+import OwnedPropertiesTable from "../../component/table/ownedPropertiesTable";
+import { properties } from "../../utils/constants/listings";
 
 const OwnedProperties = () => (
     <AuthLayout>
@@ -58,12 +60,16 @@ const OwnedProperties = () => (
                     </div>
                 </div>
 
-                <div className="border border-[#F5F5F5] h-[300px] mt-5 rounded-lg flex items-center justify-center">
-                    <div>
-                        <p className="text-lg text-center text-white mb-8">No Property found for this search</p>
-                        <CustomButton color="white" style={{ background: ' linear-gradient(94.71deg, #9C94FE -19.32%, #EF8DF8 126.64%)' }} href={LANDING_PAGE_URL}>Back to all Properties</CustomButton>
+                {properties.length ? (<OwnedPropertiesTable />) :
+                (
+                    <div className="border border-[#F5F5F5] h-[300px] mt-5 rounded-lg flex items-center justify-center">
+                        <div>
+                            <p className="text-lg text-center text-white mb-8">No Property found for this search</p>
+                            <CustomButton color="white" style={{ background: ' linear-gradient(94.71deg, #9C94FE -19.32%, #EF8DF8 126.64%)' }} href={LANDING_PAGE_URL}>Back to all Properties</CustomButton>
+                        </div>
                     </div>
-                </div>
+                )}
+
             </div>
     </AuthLayout>
 );
