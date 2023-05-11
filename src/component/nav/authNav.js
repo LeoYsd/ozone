@@ -5,20 +5,27 @@ import ConnectWallet from "../common/connectWallet";
 import SearchInput from "../common/inputs/SearchInput";
 
 const AuthNav = () => (
-  <div className="flex px-20 items-center w-full justify-between">
-    <div className="w-1/12">
-      <Link to="/">
-        <img src={BrandLogo} alt="logo" className="w-14" />
+  <div className='w-full grid place-items-center'>
+    <div className="flex items-center w-[90%] justify-between">
+    <div className="">
+      <Link to="/"> 
+        <img src={BrandLogo} alt="logo" className="w-10" />
       </Link>
     </div>
-    <div className="flex items-center w-2/12 justify-between text-white font-robotoMd">
-      <p className="cursor-pointer trans hover:text-lailac">Market</p>
-      <p className="cursor-pointer trans hover:text-lailac">Discover</p>
-    </div>
-    <div className="flex items-center justify-between w-8/12 ml-8">
-      <SearchInput />
+    <div className="flex items-center w-[87%] justify-between text-white font-robotoMd">
+      <div className='flex items-center justify-center gap-10'>
+        <p className="cursor-pointer trans hover:text-lailac">Market</p>
+        <p className="cursor-pointer trans hover:text-lailac">Discover</p>
+      </div>
+      <div>
+        <SearchInput />
+      </div>
+      <div></div>
       <ConnectWallet />
-      <div className="bg-hack p-2.5 rounded-lg ml-4">{CartIcon}</div>
+      <div className="bg-hack p-2.5 rounded-lg ml-4">
+        {CartIcon}
+      </div>
+    </div>
     </div>
   </div>
 );

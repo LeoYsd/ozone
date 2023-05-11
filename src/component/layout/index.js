@@ -6,8 +6,8 @@ import Footer from "../common/footer/footer";
 
 const LandingPageLayout = ({ children }) => (
     <div className="">
-        <div className="hero mb-10">
-            <div className="bg-[#1E1A2FD9] py-5">
+        <div className="hero">
+            <div className="bg-[#1E1A2FD9]">
                 <AuthNav />
                 <HeroLayout />
             </div>
