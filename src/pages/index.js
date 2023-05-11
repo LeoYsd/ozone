@@ -8,7 +8,7 @@ const LandingPage = () => {
 return (
     <LandingPageLayout>
         <div className="my-9">
-            <div className="flex w-1/12 justify-between cursor-pointer">
+            <div className="flex w-full md:justify-start md:gap-4 sm:justify-between cursor-pointer">
                 <p className={`font-bold trans border-b-2 ${topListing ? 'border-purple text-dark' : 'text-subText border-white'} py-2`} onClick={() => setTopListing(true)}>Top</p>
                 <p className={`font-bold trans border-b-2 ${!topListing ? 'border-purple text-dark' : 'text-subText border-white'} py-2`} onClick={() => setTopListing(false)}>WatchList</p>
             </div>

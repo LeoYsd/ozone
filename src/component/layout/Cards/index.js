@@ -8,30 +8,30 @@ const ListCard = ({ ...props }) => (
             <p className="text-subText text-normal my-2">{props.address}</p>
             <p className="text-lailac font-robotoMd text-md">{props.price}</p>
 
-            <div className="flex text-sm text-[#6D737A] w-6/12 justify-between items-center my-4">
-                <div className="flex">
+            <div className="flex text-sm text-[#84a7cf] w-full items-start gap-4 my-4">
+                <div className="flex items-center justify-center">
                     {carIcon}
                     <p className="ml-2">{props.parkSpace}</p>
                 </div>
-                <div className="flex">
+                <div className="flex items-center justify-center">
                     {BathubIcon}
                     <p className="ml-2">{props.bathub}</p>
                 </div>
-                <div className="flex">
+                <div className="flex items-center justify-center">
                     {SquareFitIcon}
                     <p className="ml-2">{props.meter}</p>
                 </div>
             </div>
             <div className="w-full h-px bg-[#1E1A2F33] mb-4" />
-            <div className="items-center flex justify-between">
+            <div className="items-center flex justify-between g">
                 <div className="flex items-center">
                         <img src={props.ownerImage} className="w-12 h-12 rounded-full bg-grey object-cover" alt="owner" />
                     <p className="text-[#1E1A2FCC] font-robotoLight ml-3 text-normal">{props.ownerName}</p>
                 </div>
                 <div className="flex w-5/12 justify-between">
-                    <div className="bg-grey p-2 rounded-lg cursor-pointer trans hover:bg-hack">{ShareIcon}</div>
-                    <div className="bg-grey p-2 rounded-lg cursor-pointer trans hover:bg-hack">{LikeIcon}</div>
-                    <div className="bg-grey p-2 rounded-lg cursor-pointer trans hover:bg-hack">{AddIcon}</div>
+                    <div className="bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack">{ShareIcon}</div>
+                    <div className="bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack">{LikeIcon}</div>
+                    <div className="bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack">{AddIcon}</div>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ const CustomButton = ({ children, bg, isLoading, disabled, width, href, color, h
   <a href={href} className="flex justify-center">
     <button
       type="button"
-      className={`${bg} px-4 py-3 rounded-lg hover:opacity-80 flex items-center trans disabled:opacity-50 disabled:cursor-not-allowed ${width} justify-center text-${color} border ${borderColor}`}
+      className={`${bg} lg:p-3.5 sm:p-2 rounded-lg hover:opacity-80 flex items-center trans disabled:opacity-50 sm:text-[.8rem] disabled:cursor-not-allowed ${width} justify-center text-${color} border ${borderColor}`}
       disabled={disabled}
       onClick={handleClick}
       style={style}
