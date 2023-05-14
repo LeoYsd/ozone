@@ -12,7 +12,7 @@ const SearchInput = () => (
       <input
         type="text"
         id="search"
-        className="w-full border text-dark text-normal rounded-lg focus:ring-lailac focus:border-lailac block pl-10 p-2.5 focus-within:border-lailac focus-within:outline-lailac placeholder:text-label"
+        className="w-full border-none text-dark text-normal rounded-lg focus:none block pl-10 p-2.5 outline-none focus-within:none placeholder:text-label"
         placeholder='Search Land, Housing Properties, Real Estate...'
         required
       />
