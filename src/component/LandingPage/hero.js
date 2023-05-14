@@ -1,8 +1,12 @@
 const HeroLayout = () => (
-    <main className="w-full h-[100vh]">
-        <div className="flex flex-col items-center justify-center pt-10">
-            <h1 className="font-robotoMd text-center text-[65px] font-bold text-white justify-center"><span className="text-purple">Buy & Sell</span> Real Estate with Web 3...</h1>
-            <p className="text-white mt-4 text-center font-robotoLight w-9/12 mx-auto">A seamless way to invest in real property without any hassle, everything is seamless, legal documents and all provided. You are 100% safe.</p>
+    <main className="w-full lg:h-[90vh] sm:h-[70vh] grid place-items-center">
+        <div className="flex flex-col items-center justify-center lg:w-[58%] md:w-[70%] sm:w-[90%] mt-10 gap-6">
+            <div className="lg:w-[85%] sm:w-[90%]">
+                <h1 className="font-robotoMd text-center lg:text-[3.5rem] md:text-[3rem] sm:text-[2rem] lg:leading-[85.4px] font-bold text-white justify-center"><span className="text-purple">Buy & Sell</span> Real Estate with Web 3...</h1>
+            </div>
+            <div>
+                <p className="text-white text-center font-robotoLight md:text-[1.3rem] w-full">A seamless way to invest in real property without any hassle, everything is seamless, legal documents and all provided. You are 100% safe.</p>
+            </div>
         </div>
     </main>
 );
