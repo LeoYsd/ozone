@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { CartIcon } from "../../assets/svgs";
+import CartIcon from "../../assets/svgs/cart.svg";
 import BrandLogo from "../../assets/icons/brand-logo.svg";
 import ConnectWallet from "../common/connectWallet";
 import SearchInput from "../common/inputs/SearchInput";
@@ -36,8 +36,8 @@ const AuthNav = () => {
           <div className="hidden md:block">
             <ConnectWallet />
           </div>
-          <div className="bg-hack p-2 rounded-lg">
-            {CartIcon}
+          <div className="bg-hack p-3 rounded-lg">
+            <img src={CartIcon} alt="CartIcon" />
           </div>
         </div>
       </div>
