@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import AuthNav from "../nav/authNav";
 import HeroLayout from "../LandingPage/hero";
 import SliderContainer from "../common/slider/sliderContainer";
@@ -7,6 +8,7 @@ import Footer from "../common/footer/footer";
 const LandingPageLayout = ({ children }) => (
     <div className="">
         <div className="hero">
+            <Toaster/>
             <div className="bg-[#1E1A2FD9]">
                 <AuthNav />
                 <HeroLayout />
@@ -25,7 +27,7 @@ export default LandingPageLayout;
 
 export const AuthLayout = ({ children }) => (
     <div className="">
-            <div className="bg-dark py-5">
+            <div className="bg-dark">
                 <AuthNav />
             </div>
         <div className="w-full">{children}</div>
