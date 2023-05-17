@@ -11,7 +11,7 @@ import { properties } from "../../utils/constants/listings";
 const OwnedProperties = () => (
     <AuthLayout>
             <div className="h-[400px] w-full">
-                <img src="https://res.cloudinary.com/dboqyj4bp/image/upload/v1683579660/arlington_ooglhz.svg" alt="image" className="relative" />
+                <img src="https://res.cloudinary.com/dboqyj4bp/image/upload/v1683579660/arlington_ooglhz.svg" alt="image" className="" />
                 <div className="w-[157px] h-[157px] bg-[#1056BECC] rounded-full border-[12px] -mt-40 absolute mx-[59px]"></div>
             </div>
             <div className="bg-dark -mt-3 h-fit px-[59px] py-4">
