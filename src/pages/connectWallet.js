@@ -3,7 +3,7 @@ import { WalletType } from "../utils/constants/listings";
 
 const ConnectWallet = () => (
     <AuthLayout>
-        <div className="bg-dark text-center py-20 text-white flex flex-col items-center justify-center">
+        <div className="bg-dark text-center py-20 text-white flex flex-col items-center justify-center min-h-screen">
             <h1 className="font-gilroyBold lg:text-[2.4rem] md:text-[2rem] sm:text-[1.6rem] lg:leading-[54px] xl:w-full md:w-[80%] sm:w-[90%]">You need a crypto wallet to use <span className="text-purple">PropertyMe</span></h1>
             <p className="mt-2 lg:tex-[1.2rem] sm:text-[.8rem]">If you don’t have a wallet, you can select a provider to create one now.</p>
 
