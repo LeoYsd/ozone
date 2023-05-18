@@ -1,10 +1,10 @@
 import { Loader } from "../../../assets/svgs";
 
-const CustomButton = ({ children, bg, isLoading, disabled, width, href, color, handleClick, borderColor, style }) => (
+const CustomButton = ({ children, bg, isLoading, disabled, width, href, color, handleClick, borderColor, style, border, fontSize }) => (
   <a href={href} className="flex justify-center">
     <button
       type="button"
-      className={`${bg} lg:p-3.5 sm:p-2 rounded-lg hover:opacity-80 flex items-center trans disabled:opacity-50 sm:text-[.8rem] disabled:cursor-not-allowed ${width} justify-center text-${color} border ${borderColor}`}
+      className={`${bg} lg:p-5 sm:p-2 rounded-lg hover:opacity-80 flex items-center trans disabled:opacity-50  disabled:cursor-not-allowed ${width} md:text-${fontSize} justify-center border-${border} text-${color} ${borderColor}`}
       disabled={disabled}
       onClick={handleClick}
       style={style}
@@ -12,6 +12,7 @@ const CustomButton = ({ children, bg, isLoading, disabled, width, href, color, h
       {isLoading && Loader}
       {children}
     </button>
+
   </a>
 );
 

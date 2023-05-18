@@ -1,42 +1,35 @@
-import { Table } from "evergreen-ui";
-import { OptionsIcon } from "../../assets/svgs";
 import { properties } from "../../utils/constants/listings";
 
 const OwnedPropertiesTable = () => {
     return (
-        <Table color="#FFFFFF">
-  <Table.Head backgroundColor="#1E1A2F" color="#FFFFFF">
-    <Table.TextHeaderCell>7 PROPERTIES</Table.TextHeaderCell>
-    <Table.TextHeaderCell>FLOOR PRICE</Table.TextHeaderCell>
-    <Table.TextHeaderCell>VALUATION</Table.TextHeaderCell>
-    <Table.TextHeaderCell>STATUS</Table.TextHeaderCell>
-  </Table.Head>
-  <Table.Body height={240}>
-    {properties.map((property) => (
-      <Table.Row key={property.id} onSelect={() => alert(property.name)}  backgroundColor="#1E1A2F" color="#FFFFFF" marginY="20px">
-        <Table.TextCell color="#FFFFFF" marginBottom="20px">
-            <div className="flex items-center text-white">
-                <img src={property.image} alt={property.name} />
-                <div className="ml-3">
-                    <p>{property.name}</p>
-                    <p>{property.location}</p>
+      <>
+        <div className="flex justify-center items-center pb-3 mt-6 border-b-[1px] border-b-[#FFFFff66] uppercase text-white font-bold pl-3">
+          <div className="w-[50%]">Properties</div>
+          <div className="w-[17%] text-center">Floor price</div>
+          <div className="w-[17%] text-center">Valuation</div>
+          <div className="w-[17%] text-center">Status</div>
+        </div>
+        <div className="flex justify-center items-center text-white pl-3">
+        <ul style={{ listStyle: "none", padding: 0, width: "100%" }}>
+          {properties.map((property) => (
+            <li key={property.id} style={{ width: "100%", marginBottom: "15px", backgroundColor: "#1E1A2F", color: "#FFFFFF" }}>
+              <div style={{ display: "flex", alignItems: "center", padding: "15px", paddingLeft: "0px" }}>
+                <img src={property.image} alt={property.name} style={{ marginRight: "10px", width: "50px" }} />
+                <div className="w-[48%]">
+                  <p>{property.name}</p>
+                  <p>{property.location}</p>
                 </div>
-            </div>
-        </Table.TextCell>
-        <Table.TextCell><p className="text-white">{property.price}</p></Table.TextCell>
-        <Table.TextCell><p className="text-white">{property.valuation}</p></Table.TextCell>
-        <Table.TextCell>
-            <div className="flex items-center text-white">
-                {property.status}
-                <div className="ml-8">
-                    {OptionsIcon}
+                <div className="w-[50%]" style={{ display: "flex", justifyContent: "space-between" }}>
+                  <div className="w-[30%] text-center">{property.price}</div>
+                  <div className="w-[30%] text-center">{property.valuation}</div>
+                  <div className="w-[30%] text-center">{property.status}</div>
                 </div>
-            </div>
-        </Table.TextCell>
-      </Table.Row>
-    ))}
-  </Table.Body>
-</Table>
+              </div>
+            </li>
+          ))}
+        </ul>
+        </div>
+      </>
     )
 };
 

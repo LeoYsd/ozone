@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import CartIcon from "../../assets/svgs/cart.svg";
-import BrandLogo from "../../assets/icons/brand-logo.svg";
-import ConnectWallet from "../common/connectWallet";
-import SearchInput from "../common/inputs/SearchInput";
+import CartIcon from "../../../assets/svgs/cart.svg";
+import BrandLogo from "../../../assets/icons/brand-logo.svg";
+import ConnectedWallet from "../../common/connectedWallet";
+import SearchInput from "../../common/inputs/SearchInput";
 
-const AuthNav = () => {
+const ProfileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -34,7 +34,7 @@ const AuthNav = () => {
             <SearchInput />
           </div>
           <div className="hidden md:block">
-            <ConnectWallet />
+            <ConnectedWallet />
           </div>
           <div className="bg-hack p-3 rounded-lg">
             <img src={CartIcon} alt="CartIcon" />
@@ -53,7 +53,7 @@ const AuthNav = () => {
             <p className="cursor-pointer">Market</p>
             <p className="cursor-pointer">Discover</p>
             <SearchInput />
-            <ConnectWallet />
+            <ConnectedWallet />
           </div>
         </div>
       )}
@@ -61,4 +61,4 @@ const AuthNav = () => {
   );
 };
 
-export default AuthNav;
+export default ProfileNav;

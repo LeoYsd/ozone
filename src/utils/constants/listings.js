@@ -112,31 +112,58 @@ export const WalletType = [
 ];
 
 export const properties = [
-    // {
-    //     id: 1,
-    //     name: 'Stack Park Penthouse',
-    //     location: '4140 Parker Rd. Allentown, New Mexico 31134',
-    //     price: '88,560 USDC',
-    //     valuation: '100,560 USDC',
-    //     status: 'Fully Owned',
-    //     image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
-    // },
-    // {
-    //     id: 1,
-    //     name: 'Stack Park Penthouse',
-    //     location: '4140 Parker Rd. Allentown, New Mexico 31134',
-    //     price: '88,560 USDC',
-    //     valuation: '100,560 USDC',
-    //     status: 'Fully Owned',
-    //     image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
-    // },
-    // {
-    //     id: 1,
-    //     name: 'Stack Park Penthouse',
-    //     location: '4140 Parker Rd. Allentown, New Mexico 31134',
-    //     price: '88,560 USDC',
-    //     valuation: '100,560 USDC',
-    //     status: 'Fully Owned',
-    //     image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
-    // },
+    {
+        id: 1,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
+    {
+        id: 2,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
+    {
+        id: 3,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
+    {
+        id: 4,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
+    {
+        id: 5,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
+    {
+        id: 6,
+        name: 'Stack Park Penthouse',
+        location: '4140 Parker Rd. Allentown, New Mexico 31134',
+        price: '88,560 USDC',
+        valuation: '100,560 USDC',
+        status: 'Fully Owned',
+        image: 'https://res.cloudinary.com/dboqyj4bp/image/upload/v1683704421/Rectangle_29_wv90h9.svg'
+    },
 ]
