@@ -33,7 +33,7 @@ const OwnedPropertiesTable = () => {
         </ul>
         </div>
         <div className="grid place-items-center w-full mt-10">
-          <Link path={CREATE_LISTING}>
+          <Link to={CREATE_LISTING}>
             <CustomButton style={{ background: "linear-gradient(94.72deg, rgba(239, 141, 248, 0.8) -31.25%, rgba(156, 148, 254, 0.8) 139.69%, rgba(239, 141, 248, 0) 139.69%)" }} color="white">
               Create a listing
             </CustomButton>
