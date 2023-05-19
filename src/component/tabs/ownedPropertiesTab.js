@@ -6,8 +6,11 @@ import Status from '../common/status';
 import PurchaseHistory from '../common/purchaseHistory';
 import OwnedTabContent from './ownedTabContent/index';
 import ListingsTabContent from './listingTab';
+import FavouriteTabContent from './favoriteTab';
+import ActivityTabContent from './activityTab';
+import MoreTabContent from './moreTab/Index';
 
-const tabs = ['Owned', 'Listings', 'Favourite', 'Activity', 'More'];
+const tabs = ['Owned', 'Listings', 'Favorites', 'Wishlist', 'More'];
 
 const OwnedPropertiesTab = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -23,7 +26,7 @@ const OwnedPropertiesTab = () => {
       case 1:
         return <ListingsTabContent />;
       case 2:
-        return <FavouriteTabContent />;
+        return <FavouriteTabContent />
       case 3:
         return <ActivityTabContent />;
       case 4:
@@ -32,24 +35,6 @@ const OwnedPropertiesTab = () => {
         return null;
     }
   };
-
-  const FavouriteTabContent = () => (
-    <div>
-      Hello Fav
-    </div>
-  );
-
-  const ActivityTabContent = () => (
-    <div>
-      Hello activity
-    </div>
-  );
-
-  const MoreTabContent = () => (
-    <div>
-      Hello more
-    </div>
-  );
 
   return (
     <div className="h-120 w-full">

@@ -1,22 +1,9 @@
-import { useState } from "react";
-import { toast } from "react-hot-toast";
-import { AddIcon, BathubIcon, ShareIcon, SquareFitIcon, carIcon } from "../../../assets/svgs";
-import Heart from '../../../assets/svgs/Heart.svg'
+import { BathubIcon, SquareFitIcon, carIcon } from "../../../assets/svgs";
+import CustomButton from "../../common/button";
+import {PURCHASE_PROPERTY} from '../../../utils/constants/pages';
+import { Link } from "react-router-dom";
 
-const ListCard = ({ ...props }) => {
-    const [isLiked, setIsLiked] = useState(false);
-    const handleCopyLink = () => {
-        toast.success('Link copied');
-    };
-
-    const handleFavClick = () => {
-        setIsLiked(!isLiked);
-        toast.success('Added to favorites');
-    };
-
-    const handleWatchlistClick = () => {
-        toast.success('Added to watchlist');
-    };
+const ActivityCard = ({ ...props }) => {
 
     return (
         <div className="bg-white rounded-xl xl:w-[32.5%] sm:w-full md:w-[49%] shadow-card cursor-pointer hover:shadow-hover my-2">
@@ -46,19 +33,18 @@ const ListCard = ({ ...props }) => {
                             <img src={props.ownerImage} className="w-12 h-12 rounded-full bg-grey object-cover" alt="owner" />
                         <p className="text-[#1E1A2FCC] font-robotoLight ml-3 text-normal">{props.ownerName}</p>
                     </div>
-                    <div className="flex w-5/12 justify-between">
-                        <div onClick={handleCopyLink} className="bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack">{ShareIcon}</div>
-                        <div
-                            onClick={handleFavClick}
-                            className={`bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack ${
-                                isLiked ? 'fill-[#9C94FE]' : ''
-                            }`}
+                    <div className="flex">
+                    <Link to={PURCHASE_PROPERTY}>
+                        <CustomButton
+                            color="white"
+                            border="none"
+                            fontSize="1rem"
+                            style={{ background: 'linear-gradient(94.71deg, #9C94FE -19.32%, #EF8DF8 126.64%)' }}
                         >
-                            <div className={isLiked ? 'fill-[#9C94FE]' : ''}>
-                                <img src={Heart} alt="Like Icon" />
-                            </div>
-                        </div>
-                        <div onClick={handleWatchlistClick} className="bg-grey md:p-2 sm:p-1 grid place-items-center rounded-lg cursor-pointer trans hover:bg-hack">{AddIcon}</div>
+                            See More Details
+                        </CustomButton>
+                    </Link>
+
                     </div>
                 </div>
             </div>
@@ -66,4 +52,4 @@ const ListCard = ({ ...props }) => {
     )
 };
 
-export default ListCard;
+export default ActivityCard;

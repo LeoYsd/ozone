@@ -10,7 +10,7 @@ const OwnedTabContent = () => {
           <CustomButton
             color="white"
             border="none"
-            fontSize="2rem"
+            fontSize="1rem"
             style={{ background: 'linear-gradient(94.71deg, #9C94FE -19.32%, #EF8DF8 126.64%)' }}
             href={LANDING_PAGE_URL}
           >

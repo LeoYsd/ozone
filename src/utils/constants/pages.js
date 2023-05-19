@@ -5,3 +5,4 @@ export const PURCHASE_PROPERTY = '/purchase-property';
 export const MAKE_PAYMENT = '/make-payment';
 export const CONFIRM_SALES = '/confirm-sales';
 export const APPROVE_PAYMENT = '/approve-payment';
+export const CREATE_LISTING = '/create-listing';
