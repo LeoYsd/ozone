@@ -32,6 +32,7 @@ module.exports = {
       white: '#FFFFFF',
       label: '#1E1A2F66',
       hack: '#9C94FE33',
+      borderColor: "rgba(255, 251, 251, 0.35)"
     },
     boxShadow: {
       inset: 'rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset',
