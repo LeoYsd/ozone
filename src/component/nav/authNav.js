@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import CartIcon from "../../assets/svgs/cart.svg";
 import BrandLogo from "../../assets/icons/brand-logo.svg";
 import ConnectWallet from "../common/connectWallet";
 import SearchInput from "../common/inputs/SearchInput";
+import { LANDING_PAGE_URL } from '../../utils/constants/pages';
 
 const AuthNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +15,12 @@ const AuthNav = () => {
   };
 
   return (
-    <div className='w-full flex justify-center py-4'>
+    <div className='w-full flex justify-center mt-0'>
       <div className="flex items-center justify-between w-[90%]">
-        <div className="flex sm:w-full md:w-[5%] justify-between items-center sm:mt-3 md:mt-0">
-          <img src={BrandLogo} alt="logo" className="w-10" />
+        <div className="flex sm:w-full md:w-[5%] justify-between items-center md:mt-0">
+          <Link to={LANDING_PAGE_URL}>
+            <img src={BrandLogo} alt="logo" className="w-10" />
+          </Link>
           <div className="md:hidden cursor-pointer" onClick={handleMenuClick}>
             {isMenuOpen ? <FaTimes className="text-white text-2xl" /> : <FaBars className="text-white text-2xl" />}
           </div>
@@ -42,9 +46,11 @@ const AuthNav = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden fixed bg-[#1e1a2f] w-full h-screen flex flex-col items-center z-50">
-          <div className="flex item-center justify-between mt-3 w-[90%]">
-            <img src={BrandLogo} alt="logo" className="w-10" />
+        <div className="md:hidden fixed bg-[#1e1a2f] w-full h-screen flex flex-col items-center -mt-4 z-50">
+          <div className="flex item-center justify-between mt-4 w-[90%]">
+            <Link to={LANDING_PAGE_URL}>
+              <img src={BrandLogo} alt="logo" className="w-10" />
+            </Link>
             <div className="cursor-pointer grid place-items-center" onClick={handleMenuClick}>
               <FaTimes className="text-white text-2xl" />
             </div>

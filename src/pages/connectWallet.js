@@ -4,8 +4,8 @@ import { WalletType } from "../utils/constants/listings";
 const ConnectWallet = () => (
     <AuthLayout>
         <div className="bg-dark text-center py-20 text-white flex flex-col items-center justify-center min-h-screen">
-            <h1 className="font-gilroyBold lg:text-[2.4rem] md:text-[2rem] sm:text-[1.6rem] lg:leading-[54px] xl:w-full md:w-[80%] sm:w-[90%]">You need a crypto wallet to use <span className="text-purple">PropertyMe</span></h1>
-            <p className="mt-2 lg:tex-[1.2rem] sm:text-[.8rem]">If you don’t have a wallet, you can select a provider to create one now.</p>
+            <h1 className="font-gilroyBold lg:text-[2.4rem] md:text-[2rem] font-bold sm:text-[1.6rem] lg:leading-[54px] xl:w-full md:w-[80%] sm:w-[90%]">You need a crypto wallet to use <span className="text-purple">Ozone</span></h1>
+            <p className="mt-4 lg:tex-[1.2rem] sm:text-[.8rem] w-[80%]">If you don’t have a wallet, you can select a provider to create one now.</p>
 
             <div className="border border-purple rounded-lg lg:w-5/12 md:w-[60%] sm:w-[90%] p-4 mx-auto mt-8">
                 {WalletType.map((wallet, index) => (

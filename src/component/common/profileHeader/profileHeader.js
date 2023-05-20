@@ -9,9 +9,9 @@ const ProfileHeader = () => {
                 <ProfileNav />
             </div>
             
-            <div className="w-full h-[350px] bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: `url(${BannerImage})` }}>
-                <div className="absolute -bottom-4 left-[2rem]">
-                    <div className="bg-black rounded-full p-2 w-[140px] h-[140px] grid place-items-center">
+            <div className="w-full md:h-[350px] sm:h-[250px] bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: `url(${BannerImage})` }}>
+                <div className="absolute -bottom-4 sm:left-[1rem] md:left-[2rem]">
+                    <div className="bg-black rounded-full p-2 md:w-[140px] md:h-[140px] sm:w-[100px] sm:h-[100px] grid place-items-center">
                         <img src={ProfileImg} alt="profile-pic" className="w-full" />
                     </div>
                 </div>

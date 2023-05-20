@@ -9,7 +9,7 @@ const LandingPageLayout = ({ children }) => (
     <div className="">
         <div className="hero">
             <Toaster/>
-            <div className="bg-[#1E1A2FD9]">
+            <div className="bg-[#1E1A2FD9] pt-4">
                 <AuthNav />
                 <HeroLayout />
             </div>

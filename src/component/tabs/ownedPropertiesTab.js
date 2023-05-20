@@ -37,12 +37,12 @@ const OwnedPropertiesTab = () => {
   };
 
   return (
-    <div className="h-120 w-full">
-      <div className="flex gap-8">
+    <div className="w-full">
+      <div className="flex md:justify-start md:items-start sm:justify-between sm:items-center md:gap-8">
         {tabs.map((tab, index) => (
           <div
             key={tab}
-            className={`cursor-pointer text-[1rem] transition duration-300 pb-2 ${
+            className={`cursor-pointer md:text-[1rem] sm:text-[.8rem] transition duration-300 pb-2 ${
               index === selectedIndex ? 'bg-gray-100 text-white border-b-2 border-white' : 'text-[#FFFFFF66]'
             }`}
             onClick={() => handleTabSelect(index)}
